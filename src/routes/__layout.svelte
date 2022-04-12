@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
+	<meta property="og:image" content="{base}/spy-bot.png" />
 	<meta name="description" content="Docs page for the spybot discord bot!" />
 	<title>SpyBot</title>
-	<link rel="icon" href="{base}/spy-bot.png" />
 </svelte:head>
 
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">

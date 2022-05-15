@@ -1,0 +1,108 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGO_LOGIN")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum RoleType {
+  VERIFICATION
+  QUARANTINE
+}
+
+enum ChannelType {
+  SUGGESTIONS
+  LOGS
+  VERIFICATION
+  RULES
+}
+
+enum PunishOption {
+  BAN
+  KICK
+  DEMOTE
+  QUARANTINE
+}
+
+enum LimitType {
+  CHANNELCREATE
+  CHANNELDELETE
+  ROLECREATE
+  ROLEDELETE
+  BAN
+  KICK
+  WARN
+}
+
+model Warn {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  reason    String
+  createdAt DateTime @default(now())
+  guild     String
+  user      String
+
+  @@unique([guild, user])
+}
+
+model UserLimit {
+  id    String    @id @default(auto()) @map("_id") @db.ObjectId
+  guild String
+  user  String
+  type  LimitType
+  limit Int
+
+  @@unique([guild, user, type])
+}
+
+model Limit {
+  id    String    @id @default(auto()) @map("_id") @db.ObjectId
+  guild String
+  type  LimitType
+  limit Int
+
+  @@unique([guild, type])
+}
+
+model Whitelist {
+  id    String   @id @default(auto()) @map("_id") @db.ObjectId
+  guild String   @unique
+  users String[]
+}
+
+model Channel {
+  id      String      @id @default(auto()) @map("_id") @db.ObjectId
+  guild   String
+  type    ChannelType
+  channel String
+
+  @@unique([guild, type])
+}
+
+model Role {
+  id    String   @id @default(auto()) @map("_id") @db.ObjectId
+  guild String
+  type  RoleType
+  role  String
+
+  @@unique([guild, type])
+}
+
+model Punish {
+  id     String       @id @default(auto()) @map("_id") @db.ObjectId
+  guild  String       @unique
+  option PunishOption
+}
+
+model Suggestion {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  body      String
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  guild     String
+  author    String
+
+  @@unique([guild, author])
+}

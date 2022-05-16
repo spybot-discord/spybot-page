@@ -7,15 +7,15 @@ const config = {
 	kit: {
 		adapter: adapter({
 			pages: 'build',
-			assets: 'build'
+			assets: 'build',
 		}),
 		paths: {
-			base: '/spybot-docs'
+			base: '/spybot-docs',
 		},
 		prerender: {
-			default: true
-		}
-	}
+			default: true,
+		},
+	},
 };
 
 export default config;

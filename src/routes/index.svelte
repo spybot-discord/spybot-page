@@ -1,18 +1,15 @@
 <script>
+	import InviteButton from '../components/InviteButton.svelte';
 	import FeatureSection from '../components/FeatureSection.svelte';
 </script>
 
 <main class="p-10">
 	<header class="text-center">
 		<h1 class="text-4xl font-title">One Bot, One Community</h1>
-		<button class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 my-4 px-4 rounded">
-			<a target="_blank" href="https://discord.gg/gjezsDb3EY">🔗 Join our Discord Support Server</a>
-		</button>
-		<button class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 my-4 px-4 rounded">
-			<a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=939629038178295828&permissions=8&scope=bot%20applications.commands"
-				>🎉 Invite</a
-			>
-		</button>
+		<InviteButton url="https://discord.gg/gjezsDb3EY">🔗 Join our Discord Support Server</InviteButton>
+		<InviteButton url="https://discord.com/api/oauth2/authorize?client_id=939629038178295828&permissions=8&scope=bot%20applications.commands"
+			>🎉 Invite
+		</InviteButton>
 	</header>
 	<div class="grid grid-cols-2 content-center">
 		<FeatureSection

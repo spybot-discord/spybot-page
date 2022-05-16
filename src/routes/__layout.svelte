@@ -12,7 +12,7 @@
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
 	<div class="container flex flex-wrap justify-between items-center mx-auto">
 		<a href={base}>
-			<img src="{base}/spy-bot.png" class="mr-3 h-6 sm:h-16 rounded-3xl" alt="Spy Bot" />
+			<img src="{base}/spy-bot.png" class="mr-3 h-6 sm:h-16 rounded-full" alt="Spy Bot" />
 		</a>
 		<button
 			data-collapse-toggle="mobile-menu"

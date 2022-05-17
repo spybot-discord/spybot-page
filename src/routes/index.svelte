@@ -3,6 +3,10 @@
 	import FeatureSection from '../components/FeatureSection.svelte';
 </script>
 
+<svelte:head>
+	<title>Spy Bot</title>
+</svelte:head>
+
 <main>
 	<header class="text-center">
 		<h1 class="text-4xl font-title">One Bot, One Community</h1>

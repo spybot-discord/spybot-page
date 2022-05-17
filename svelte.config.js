@@ -10,7 +10,7 @@ const config = {
 			assets: 'build',
 		}),
 		paths: {
-			base: '/spybot-docs',
+			base: '/spybot-page',
 		},
 		prerender: {
 			default: true,

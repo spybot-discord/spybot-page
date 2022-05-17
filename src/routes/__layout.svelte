@@ -9,7 +9,7 @@
 	<title>Spy Bot</title>
 </svelte:head>
 
-<nav class="dark:text-white fixed w-full top-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+<nav class="fixed w-full top-0 px-2 sm:px-4 py-2.5 rounded bg-gray-900">
 	<div class="container flex flex-wrap justify-between items-center mx-auto">
 		<a href="{base}">
 			<img src="{base}/spy-bot.png" class="mr-3 h-6 sm:h-16 rounded-full inline-block" alt="Spy Bot" />
@@ -43,6 +43,14 @@
 						href="{base}/"
 						class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-gray-400 md:dark:hover:text-white"
 						aria-current="page">Home</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://eldiplayz.gitbook.io/spy-bot-docs/"
+						target="_blank"
+						class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 dark:text-gray-400 md:dark:hover:text-white"
+						aria-current="page">Docs</a
 					>
 				</li>
 				<li>

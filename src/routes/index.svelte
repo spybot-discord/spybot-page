@@ -3,7 +3,7 @@
 	import FeatureSection from '../components/FeatureSection.svelte';
 </script>
 
-<main class="p-10">
+<main>
 	<header class="text-center">
 		<h1 class="text-4xl font-title">One Bot, One Community</h1>
 		<InviteButton url="https://discord.gg/gjezsDb3EY">🔗 Join our Discord Support Server</InviteButton>

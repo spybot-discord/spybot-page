@@ -11,8 +11,8 @@
 	<header class="text-center">
 		<h1 class="text-4xl font-title">One Bot, One Community</h1>
 		<InviteButton url="https://discord.gg/gjezsDb3EY">🔗 Join our Discord Support Server</InviteButton>
-		<InviteButton url="https://discord.com/api/oauth2/authorize?client_id=939629038178295828&permissions=8&scope=bot%20applications.commands"
-			>🎉 Invite
+		<InviteButton url="https://discord.com/api/oauth2/authorize?client_id=939629038178295828&permissions=8&scope=bot%20applications.commands">
+			🎉 Invite
 		</InviteButton>
 	</header>
 	<div class="grid grid-cols-2 content-center">

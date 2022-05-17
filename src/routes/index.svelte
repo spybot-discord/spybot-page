@@ -15,7 +15,7 @@
 			🎉 Invite
 		</InviteButton>
 	</header>
-	<div class="grid grid-cols-2 content-center">
+	<div class="grid grid-cols-1 md:grid-cols-2">
 		<FeatureSection
 			title="Verification"
 			img="https://cdn.discordapp.com/attachments/968151394488057916/975457278704644106/unknown.png"

@@ -4,12 +4,12 @@ publish(
 	'build',
 	{
 		branch: 'gh-pages',
-		repo: 'https://github.com/AngelNext/spybot-docs.git',
+		repo: 'https://github.com/spy-bot-discord/spybot-page.git',
 		user: {
 			name: 'AngelNext',
-			email: 'angelgz.vazquez@gmail.com'
+			email: 'angelgz.vazquez@gmail.com',
 		},
-		dotfiles: true
+		dotfiles: true,
 	},
 	() => console.log('Deploy Complete!')
 );
